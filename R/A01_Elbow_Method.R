@@ -68,7 +68,7 @@ cluster_data <- tibble(
 # Plot the elbow method with ggplot2
 ggplot(cluster_data, aes(x = Clusters, y = WCSS)) +
   geom_point(size = 3) +
-  geom_line(size = 1) +
+  geom_line(linewidth = 1) +
   # Plot the blue line using geom_segment without generating warnings
   geom_segment(
     x = 2,
